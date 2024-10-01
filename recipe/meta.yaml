@@ -1,5 +1,5 @@
 {% set name = "pypika-tortoise" %}
-{% set version = "0.1.6" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pypika-tortoise-{{ version }}.tar.gz
-  sha256: d802868f479a708e3263724c7b5719a26ad79399b2a70cea065f4a4cadbebf36
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0f0040229f99c0052efa1f74aefe0f8a66db77472222001a980ecbad1c1c502d
 
 build:
   number: 0
@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - poetry
-    - python >=3.6,<4.0
+    - poetry-core >=1.0.0
+    - python >=3.7,<4.0
   run:
-    - python >=3.6,<4.0
+    - python >=3.7,<4.0
 
 test:
   imports:
