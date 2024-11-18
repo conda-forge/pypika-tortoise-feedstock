@@ -1,5 +1,5 @@
 {% set name = "pypika-tortoise" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 979bbb9d60fe9f6e4129a25c44ee008aab4a4e97b296350be9983dcaa2766354
+  sha256: f0fbc9e0c3ddc33118a5be69907428863849df60788e125edef1f46a6261d63b
 
 build:
   number: 0
