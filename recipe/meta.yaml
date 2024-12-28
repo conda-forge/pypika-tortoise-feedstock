@@ -25,7 +25,7 @@ requirements:
 
 test:
   imports:
-    - pypika
+    - pypika_tortoise
   commands:
     - pip check
   requires:
