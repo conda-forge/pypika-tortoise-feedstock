@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pypika-tortoise
-  version: "0.6.2"
+  version: "0.6.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: f95ab59d9b6454db2e8daa0934728458350a1f3d56e81d9d1debc8eebeff26b3
+  sha256: 6e17f00e77e78468836cb5c63eb6dc01445f83b1167e4f29f1c678949179c079
 
 build:
   number: 0
